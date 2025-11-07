@@ -9,13 +9,14 @@ public class GameManager : MonoBehaviour
     #region Public Fields
 
     public GameObject roundManagerPrefab;
+    public int nb_weapons;
 
     #endregion
 
     #region Private Fields
 
     private int total_score;
-    private int lives;
+    private int num_lives;
     private int num_round;
 
     
@@ -40,7 +41,7 @@ public class GameManager : MonoBehaviour
     {
         num_round = 2;
         total_score = 0;
-        lives = 3;
+        num_lives = 3;
 
         Debug.Log("Start : GameManager");
         GameObject roundManager = Instantiate(roundManagerPrefab);
@@ -56,7 +57,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("nextRound : GameManager");
         int difficulty = 0;
-        int nb_weapons = 0;
         List<int> nb_slots = new List<int>();
 
         int limit = num_round;
@@ -66,16 +66,20 @@ public class GameManager : MonoBehaviour
         {
             temp = Random.Range(2, limit);
 
-            Debug.Log("temp = " + temp.ToString());
-            if(temp == limit-1) temp += 1;
+            Debug.Log("temp = " + temp);
+            if(temp == limit-1)
+            {
+                temp += 1;
+                Debug.Log("temp ajusted");
+            }
+            
+            my_rm.weapons.Add(Random.Range(0,nb_weapons));
 
             nb_slots.Add(temp);
-            nb_weapons++;
             difficulty += temp;
             limit -= temp;
         }
 
-        my_rm.nb_weapons = nb_weapons;
         my_rm.nb_slots = nb_slots;
 
         my_rm.beginNewRound();
@@ -84,6 +88,32 @@ public class GameManager : MonoBehaviour
     void endRound()
     {
         Debug.Log("endRound : GameManager");
+
+        foreach(int score in my_rm.scores)
+        {
+            total_score += score;
+        }
+
+        foreach(bool live in my_rm.lives)
+        {
+            if (live)
+            {
+                num_lives--;
+            }
+        }
+        if (num_lives > 0)
+        {
+            nextRound();
+        }
+        else
+        {
+            endGame();
+        }
+    }
+
+    private void endGame()
+    {
+
     }
 
     #endregion
