@@ -1,0 +1,38 @@
+using UnityEngine;
+
+#ROOTNAMESPACEBEGIN#
+/// <summary>
+/// MonoBehaviour class
+/// </summary>
+public class #SCRIPTNAME# : MonoBehaviour
+{
+    #region Public Fields
+
+
+
+    #endregion
+
+    #region Private Fields
+
+
+
+    #endregion
+
+    #region MonoBehaviour Callbacks
+
+
+
+    #endregion
+
+    #region Public Methods
+
+
+
+    #endregion
+
+    #region Private Methods
+
+
+    #endregion
+}
+#ROOTNAMESPACEEND#
