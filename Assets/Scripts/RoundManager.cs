@@ -7,7 +7,7 @@ public class RoundManager : MonoBehaviour
 {
     #region Public Fields
 
-    public int nb_weapons;
+    public List<int> weapons;
     public List<int> nb_slots;
     public List<int> scores;
     public List<bool> lives;
