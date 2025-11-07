@@ -21,7 +21,7 @@ public class SlotsManager : MonoBehaviour
 
     #region Private Fields
 
-
+    
 
     #endregion
 
@@ -32,8 +32,6 @@ public class SlotsManager : MonoBehaviour
     #endregion
 
     #region Public Methods
-
-
 
     #endregion
 

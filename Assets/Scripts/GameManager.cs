@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     #region Public Fields
 
     public GameObject roundManagerPrefab;
+    public GameObject slotsManagerPrefab;
+    public GameObject slotPrefab;
     public int nb_weapons;
 
     #endregion
@@ -46,6 +48,10 @@ public class GameManager : MonoBehaviour
         Debug.Log("Start : GameManager");
         GameObject roundManager = Instantiate(roundManagerPrefab);
         my_rm = roundManager.GetComponent<RoundManager>();
+
+        GameObject slotsManager = Instantiate(slotsManagerPrefab);
+        my_rm.my_sm = slotsManager.GetComponent<SlotsManager>();
+
         nextRound();
     }
 
@@ -58,6 +64,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("nextRound : GameManager");
         int difficulty = 0;
         List<int> nb_slots = new List<int>();
+        List<int> weapons = new List<int>();
 
         int limit = num_round;
         int temp;
@@ -73,14 +80,14 @@ public class GameManager : MonoBehaviour
                 Debug.Log("temp ajusted");
             }
             
-            my_rm.weapons.Add(Random.Range(0,nb_weapons));
-
+            weapons.Add(Random.Range(0,nb_weapons));
             nb_slots.Add(temp);
             difficulty += temp;
             limit -= temp;
         }
 
         my_rm.nb_slots = nb_slots;
+        my_rm.weapons = weapons;
 
         my_rm.beginNewRound();
     }
