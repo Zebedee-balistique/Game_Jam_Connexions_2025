@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
         {
             temp = Random.Range(2, limit);
 
-            Debug.Log("temp = " + temp.toString());
+            Debug.Log("temp = " + temp.ToString());
             if(temp == limit-1) temp += 1;
 
             nb_slots.Add(temp);
