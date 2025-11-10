@@ -1,5 +1,6 @@
 using Sirenix.OdinInspector;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -42,14 +43,6 @@ public class PageNavManager : Singleton<PageNavManager>
     #region Public Fields
 
     /// <summary>
-    /// This scene's <see cref="ENavigationScene"/> index.
-    /// </summary>
-    [SerializeField]
-    [LabelText("This Scene's Enum Index")]
-    [ValidateInput("@sceneIndex != ENavigationScene.None", "Scene index mustn't be \"None\"", InfoMessageType.Warning)]
-    public ENavigationScene sceneIndex = ENavigationScene.None;
-
-    /// <summary>
     /// List of this scene's pages.
     /// </summary>
     [Space]
@@ -61,7 +54,7 @@ public class PageNavManager : Singleton<PageNavManager>
 
     #region Private Fields
 
-
+    [SerializeField] private CanvasGroup canvasGroup;
 
     #endregion
 
@@ -95,11 +88,35 @@ public class PageNavManager : Singleton<PageNavManager>
         //[TODO]
     }
 
+    public void ExitGame()
+    {
+        StartCoroutine(ExitGameAnim());
+    }
+
     #endregion
 
     #region Private Methods
 
+    private IEnumerator ExitGameAnim()
+    {
+        if(canvasGroup != null)
+        {
+            canvasGroup.gameObject.SetActive(true);
+            canvasGroup.alpha = 0f;
 
+            var time = Time.time;
+
+            while (Time.time - time < 0.5f)
+            {
+                canvasGroup.alpha = (Time.time - time) / 0.5f;
+                yield return null;
+            }
+
+            canvasGroup.alpha = 1f;
+            Debug.Log("Exitting...");
+            Application.Quit();
+        }
+    }
 
     #endregion
 }

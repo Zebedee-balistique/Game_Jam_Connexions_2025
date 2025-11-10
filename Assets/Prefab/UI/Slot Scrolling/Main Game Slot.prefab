@@ -191,6 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   pooled_data_provider: {fileID: 8689714952631012106}
   pooled_scroll_rect_controller: {fileID: 9107351928331842521}
+  layoutElement: {fileID: 827785672258470505}
 --- !u!114 &827785672258470505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,7 +207,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: -1
+  m_PreferredWidth: 0
   m_PreferredHeight: 320
   m_FlexibleWidth: 1
   m_FlexibleHeight: -1

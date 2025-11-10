@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using PooledScrollList.Controller;
 using PooledScrollList.Example;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// MonoBehaviour class
@@ -36,11 +37,26 @@ public class Slot : MonoBehaviour
             }
         } }
 
-    public float width { get { return width; } set 
-        { 
-            width = value;
-            //[TODO]
-        } }
+    //------[Retiré à plus complexe que prévu à implémenter]------
+    //public float width { get { return width; } set 
+    //    {
+    //        width = value;
+    //        if(layoutElement != null)
+    //        {
+    //            if (width == 0)
+    //            {
+    //                //Reprendre la taille normale
+    //                layoutElement.flexibleWidth = 1;
+    //                layoutElement.preferredWidth = 0;
+    //            }
+    //            else
+    //            {
+    //                //Définir nouvelle taille
+    //                layoutElement.flexibleWidth = 0;
+                      //[TODO]
+    //            }
+    //        }
+    //    } }
 
     [HideInInspector]
     public List<Sprite> symbols_sprites { get { return symbols_sprites; } set 
@@ -76,6 +92,7 @@ public class Slot : MonoBehaviour
 
     [SerializeField] private PooledDataProviderExample pooled_data_provider;
     [SerializeField] private PooledScrollRectController pooled_scroll_rect_controller;
+    [SerializeField] private LayoutElement layoutElement;
 
     #endregion
 
