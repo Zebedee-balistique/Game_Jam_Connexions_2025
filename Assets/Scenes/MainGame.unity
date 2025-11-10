@@ -1251,6 +1251,50 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 711235505799657988, guid: a5d1f4ce126b0da48a4727567f551451, type: 3}
   m_PrefabInstance: {fileID: 1044818779957306224}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1044818779957306226 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6665357166183890077, guid: a5d1f4ce126b0da48a4727567f551451, type: 3}
+  m_PrefabInstance: {fileID: 1044818779957306224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a683241c32670946aa0ac9d3c508d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameResultsPage
+--- !u!114 &1044818779957306227 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4106100014859869384, guid: a5d1f4ce126b0da48a4727567f551451, type: 3}
+  m_PrefabInstance: {fileID: 1044818779957306224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f5c74add2c5ed041ade28c79479490d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundResultsPage
+--- !u!114 &1044818779957306228 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1968473287194937474, guid: a5d1f4ce126b0da48a4727567f551451, type: 3}
+  m_PrefabInstance: {fileID: 1044818779957306224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17f66ea7b020e02479c0c9730dbde039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReadyGoPage
+--- !u!114 &1044818779957306229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 498572846730901288, guid: a5d1f4ce126b0da48a4727567f551451, type: 3}
+  m_PrefabInstance: {fileID: 1044818779957306224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88bf338941bd0547a3754ac56476cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BasicPage
 --- !u!1001 &2969170156894790495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1303,6 +1347,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3888363873541248492, guid: 67ecb7e8bd453d44d98c8d91871bddc0, type: 3}
+      propertyPath: sceneIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888363873541248492, guid: 67ecb7e8bd453d44d98c8d91871bddc0, type: 3}
+      propertyPath: pages.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888363873541248492, guid: 67ecb7e8bd453d44d98c8d91871bddc0, type: 3}
+      propertyPath: pages.Array.data[0].Key
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888363873541248492, guid: 67ecb7e8bd453d44d98c8d91871bddc0, type: 3}
+      propertyPath: pages.Array.data[1].Key
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888363873541248492, guid: 67ecb7e8bd453d44d98c8d91871bddc0, type: 3}
+      propertyPath: pages.Array.data[2].Key
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888363873541248492, guid: 67ecb7e8bd453d44d98c8d91871bddc0, type: 3}
+      propertyPath: pages.Array.data[3].Key
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888363873541248492, guid: 67ecb7e8bd453d44d98c8d91871bddc0, type: 3}
+      propertyPath: pages.Array.data[0].Value
+      value: 
+      objectReference: {fileID: 1044818779957306229}
+    - target: {fileID: 3888363873541248492, guid: 67ecb7e8bd453d44d98c8d91871bddc0, type: 3}
+      propertyPath: pages.Array.data[1].Value
+      value: 
+      objectReference: {fileID: 1044818779957306228}
+    - target: {fileID: 3888363873541248492, guid: 67ecb7e8bd453d44d98c8d91871bddc0, type: 3}
+      propertyPath: pages.Array.data[2].Value
+      value: 
+      objectReference: {fileID: 1044818779957306227}
+    - target: {fileID: 3888363873541248492, guid: 67ecb7e8bd453d44d98c8d91871bddc0, type: 3}
+      propertyPath: pages.Array.data[3].Value
+      value: 
+      objectReference: {fileID: 1044818779957306226}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
