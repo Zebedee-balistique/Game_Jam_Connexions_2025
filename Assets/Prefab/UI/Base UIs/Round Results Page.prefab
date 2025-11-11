@@ -21,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6432381897343773003
 RectTransform:
   m_ObjectHideFlags: 0
@@ -139,7 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f5c74add2c5ed041ade28c79479490d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoundResultsPage
-  pageIndex: 4
+  pageIndex: 3
+  canvasGroup: {fileID: 2837946581183878080}
 --- !u!225 &2837946581183878080
 CanvasGroup:
   m_ObjectHideFlags: 0

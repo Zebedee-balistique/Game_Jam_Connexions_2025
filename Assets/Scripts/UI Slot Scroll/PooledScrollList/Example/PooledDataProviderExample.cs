@@ -16,7 +16,7 @@ namespace PooledScrollList.Example
         {
             var data = new List<PooledData>(symbols_sprites.Count);
 
-            data.Add(new PooledDataExample { sprite = symbols_sprites[symbols_sprites.Count-1] });
+            data.Add(new PooledDataExample { sprite = symbols_sprites[symbols_sprites.Count - 1] });
 
             for (var i = 0; i < symbols_sprites.Count; i++)
             {

@@ -21,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5068333752625865449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -139,7 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a683241c32670946aa0ac9d3c508d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameResultsPage
-  pageIndex: 5
+  pageIndex: 4
+  canvasGroup: {fileID: 7132622455355123531}
 --- !u!225 &7132622455355123531
 CanvasGroup:
   m_ObjectHideFlags: 0

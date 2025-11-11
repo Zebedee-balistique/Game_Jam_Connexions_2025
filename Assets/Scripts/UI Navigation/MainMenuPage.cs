@@ -12,7 +12,10 @@ public class MainMenuPage : APage
 
     #region Private Fields
 
-
+    private void OnDisable()
+    {
+        PageNavManager.Instance.LoadAdditivePage(2);
+    }
 
     #endregion
 

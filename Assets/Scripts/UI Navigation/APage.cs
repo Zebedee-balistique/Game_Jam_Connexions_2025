@@ -8,6 +8,8 @@ public abstract class APage : MonoBehaviour
     #region Public Fields
 
     public ENavPage pageIndex;
+    
+    public CanvasGroup canvasGroup;
 
     #endregion
 

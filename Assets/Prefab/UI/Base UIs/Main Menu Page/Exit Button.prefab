@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4217462368797847377}
   - component: {fileID: 2862939005098584100}
-  - component: {fileID: 897944104547880858}
+  - component: {fileID: 825032523524265927}
   m_Layer: 5
   m_Name: Exit Button
   m_TagString: Untagged
@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 440, y: 96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2862939005098584100
 MonoBehaviour:
@@ -53,12 +53,12 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 440
+  m_PreferredWidth: 197.4
   m_PreferredHeight: 96
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &897944104547880858
+--- !u!114 &825032523524265927
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

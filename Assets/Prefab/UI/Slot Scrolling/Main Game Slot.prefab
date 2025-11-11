@@ -510,13 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PooledScrollList.Example.PooledDataProviderExample
   ScrollRectController: {fileID: 9107351928331842521}
-  symbols_sprites:
-  - {fileID: 3567158258931686174, guid: 8fe977f002d39a24b84b6a2838ec8b23, type: 3}
-  - {fileID: -68009155221919331, guid: 9333ed1c04f05254b9cfbb1499888c80, type: 3}
-  - {fileID: -7302183425930915258, guid: 98058cd5bce4d6f4cb3c05d254c7a6bf, type: 3}
-  - {fileID: 8321577236091818713, guid: 926a1b9d90af27f44a3e2b2f93329409, type: 3}
-  - {fileID: -4576352566722670741, guid: 7ac45b71e2a6d3d4db978dd1412c84bb, type: 3}
-  - {fileID: -1599932180442542945, guid: 8b570fefdd4ce96498edc5856bec4725, type: 3}
+  symbols_sprites: []
 --- !u!1 &6890526571281016395
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8586811408952956942
 RectTransform:
   m_ObjectHideFlags: 0

@@ -278,7 +278,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae9af982476b6640bda35d5400ef587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainGamePage
-  pageIndex: 2
+  pageIndex: 1
+  canvasGroup: {fileID: 1522188020352508579}
 --- !u!225 &1522188020352508579
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -455,7 +456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2117140820796344915, guid: 0292076bf5b0d114ba47b2e9d9d1e340, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2976130416450571654, guid: 0292076bf5b0d114ba47b2e9d9d1e340, type: 3}
       propertyPath: m_AnchorMax.y
