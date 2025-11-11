@@ -44,8 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be06fbb78729c24ebb407a32c7ca4ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoundManager
-  nb_weapons: 0
+  slotsManagerPrefab: {fileID: 4732627015788636199, guid: 541ce7e137e9cef4cbf235daad7e5bcf, type: 3}
+  weapons: 
   nb_slots: 
   scores: 
   lives: 
   round_multiplier: 0
+  my_sm: {fileID: 0}
