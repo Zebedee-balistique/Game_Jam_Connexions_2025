@@ -47,6 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PageNavManager
   activatePersistent: 0
   pages:
+  - Key: 0
+    Value: {fileID: 0}
   - Key: 1
     Value: {fileID: 0}
   - Key: 2
@@ -54,8 +56,6 @@ MonoBehaviour:
   - Key: 3
     Value: {fileID: 0}
   - Key: 4
-    Value: {fileID: 0}
-  - Key: 5
     Value: {fileID: 0}
   canvasGroup: {fileID: 8311144846791882845}
 --- !u!1 &5184017912919902369

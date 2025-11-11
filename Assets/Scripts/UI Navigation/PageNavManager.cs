@@ -63,6 +63,7 @@ public class PageNavManager : Singleton<PageNavManager>
     public override void Awake()
     {
         base.Awake();
+        StartCoroutine(EnterGameAnim());
     }
 
     #endregion
@@ -132,6 +133,26 @@ public class PageNavManager : Singleton<PageNavManager>
 
         pages[pageID].Value.canvasGroup.alpha = 0f;
         pages[pageID].Value.gameObject.SetActive(false);
+    }
+
+    private IEnumerator EnterGameAnim()
+    {
+        if (canvasGroup != null)
+        {
+            canvasGroup.gameObject.SetActive(true);
+            canvasGroup.alpha = 1f;
+
+            var time = Time.time;
+
+            while (Time.time - time < 0.5f)
+            {
+                canvasGroup.alpha = 1 - ((Time.time - time) / 0.5f);
+                yield return null;
+            }
+
+            canvasGroup.alpha = 0f;
+            canvasGroup.gameObject.SetActive(false);
+        }
     }
 
     private IEnumerator ExitGameAnim()
