@@ -484,10 +484,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6993441625197019331}
     m_Modifications:
-    - target: {fileID: 4095669844811409987, guid: 4281e8a184523d943a81fdc4c29caff2, type: 3}
-      propertyPath: pageIndex
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 5068333752625865449, guid: 4281e8a184523d943a81fdc4c29caff2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -681,10 +677,6 @@ PrefabInstance:
     - target: {fileID: 6569041597109699333, guid: 41a88a9210c1b8543ace1d7596e4142f, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6783368457419043894, guid: 41a88a9210c1b8543ace1d7596e4142f, type: 3}
-      propertyPath: pageIndex
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -911,10 +903,6 @@ PrefabInstance:
     - target: {fileID: 8995132130983304616, guid: 138f3904ee089c9479ad4ce6b3ca7254, type: 3}
       propertyPath: m_Name
       value: Main Game Page
-      objectReference: {fileID: 0}
-    - target: {fileID: 9005929257530016333, guid: 138f3904ee089c9479ad4ce6b3ca7254, type: 3}
-      propertyPath: pageIndex
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9028095773597797866, guid: 138f3904ee089c9479ad4ce6b3ca7254, type: 3}
       propertyPath: m_AnchorMax.y
