@@ -53,7 +53,7 @@ public class Slot : MonoBehaviour
     //            {
     //                //Définir nouvelle taille
     //                layoutElement.flexibleWidth = 0;
-                      //[TODO]
+                      //
     //            }
     //        }
     //    } }

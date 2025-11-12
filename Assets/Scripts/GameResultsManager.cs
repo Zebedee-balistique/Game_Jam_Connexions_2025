@@ -68,7 +68,6 @@ public class GameResultsManager : Singleton<GameResultsManager>
         totalScoreAmount.gameObject.SetActive(false);
         newHighScore.SetActive(false);
         buttons.SetActive(false);
-        this.GetComponent<CanvasGroup>().alpha = 1.0f;
         StartCoroutine(Anim());
     }
 
