@@ -32,7 +32,7 @@ public class ReadyGoPage : APage
     private void OnDisable()
     {
         //[TODO] : Start the game for real
-        Debug.Log("REPLACE THIS BY STARTIGN THE GAME !");
+        Debug.Log("REPLACE THIS BY STARTING NEXT ROUND/THE FIRST ROUND OF THE GAME !");
     }
 
     #region Public Methods

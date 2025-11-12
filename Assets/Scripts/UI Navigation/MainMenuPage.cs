@@ -14,6 +14,7 @@ public class MainMenuPage : APage
 
     private void OnDisable()
     {
+        if(PageNavManager.Instance != null)
         PageNavManager.Instance.LoadAdditivePage(2);
     }
 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1ef6d0a1e7724e848b768a8186f0e8c4
+guid: ab942d5d47453eb4c8b979a78bb549a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8053122005467022787
-    second: Machaira_0
+      213: 4510496719319209655
+    second: Heart-Icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Machaira_0
+      name: Heart-Icon_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 64
-        width: 1003
-        height: 185
+        x: 0
+        y: 24
+        width: 436
+        height: 412
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c54eb4fbcf62cf60800000000000000
-      internalID: 8053122005467022787
+      spriteID: 7b6169b5ed0889e30800000000000000
+      internalID: 4510496719319209655
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Machaira_0: 8053122005467022787
+      Heart-Icon_0: 4510496719319209655
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
